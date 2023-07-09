@@ -1,0 +1,23 @@
+.vicky{
+    height: 300px;
+ 
+ 
+    /* background-image: linear-gradient(rgb(244, 0, 248), rgb(0, 204, 255)); */
+ }
+ .vicky1{
+     display:grid;
+     margin-top: 10px;
+ }
+ .in{
+     height: 50px;
+     width: 400px;
+     padding-top: 8px;
+     padding-left: 20px;
+     border: 0px;
+     border-bottom:solid rgb(0, 0, 0) 2px;
+ margin-left: 50px;
+ }
+ .temp{
+     height: 300px;
+     width: 570px;
+ }

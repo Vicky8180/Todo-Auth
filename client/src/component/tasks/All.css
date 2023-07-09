@@ -1,0 +1,83 @@
+
+/* /// Card.js files///////////////////////////////// */
+.card_1{
+
+    width: 98%;
+    height: auto;
+    margin-left: 1%;
+    background-color: rgb(255, 255, 255);
+    margin-top:5%;
+    border-radius: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card_11{
+
+    width: 24%;
+    height: 250px;
+    margin-left: 2%;
+    background-color: rgb(207, 215, 207);
+    margin-top: 0.5%;
+    border-radius: 2%;
+    margin-bottom: 1%;
+    position: relative;
+    transition: transform 0.3s, z-index 0.3s;
+    box-shadow: 0 2px 8px rgba(124, 52, 52, 0.2);
+    
+}
+.card_11:hover {
+    z-index: 1;
+  transform: scale(1.1);
+
+  }
+
+.card_title{
+    width: 90%;
+    margin-left: 5%;
+    height: 40px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+
+    /* padding-left: 10px; */
+    /* padding-top: 6px; */
+    background-color: rgb(0, 255, 21);
+}
+.card_discription{
+    width: 90%;
+    margin-left: 5%;
+    height: 60%;
+    margin-bottom: 5px;
+    /* padding-left: 10px; */
+    /* padding-top: 6px; */
+    background-color: aqua;
+}
+
+.card_progress{
+    width: 90%;
+    margin-left: 5%;
+    height: 30px;
+    /* padding-left: 10px; */
+    /* padding-top: 6px; */
+    background-color: rgb(141, 225, 24);
+}
+
+
+/* ////End///////////////////////////*/
+
+  /* ///////////////////// CardForAdd */
+
+
+.newDialog{
+    height: 500px;
+    width: 500px;
+}
+
+.dataAndtimePicker{
+
+    width:460px;
+    margin-left: 20px;
+}
+
+
+  /* /////////////////////// Ends  */

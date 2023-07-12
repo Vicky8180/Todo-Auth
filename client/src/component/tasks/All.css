@@ -17,7 +17,7 @@
     width: 24%;
     height: 250px;
     margin-left: 2%;
-    background-color: rgb(207, 215, 207);
+    background-color: rgb(255, 255, 255);
     margin-top: 0.5%;
     border-radius: 2%;
     margin-bottom: 1%;
@@ -41,7 +41,7 @@
 
     /* padding-left: 10px; */
     /* padding-top: 6px; */
-    background-color: rgb(0, 255, 21);
+    background-color: rgb(255, 255, 255);
 }
 .card_discription{
     width: 90%;
@@ -50,8 +50,23 @@
     margin-bottom: 5px;
     /* padding-left: 10px; */
     /* padding-top: 6px; */
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
+    /* height: 300px; Set the desired height */
+    overflow-y: auto;
 }
+.card_discription::-webkit-scrollbar {
+    width: 0.5em;
+  }
+  
+  /* Track */
+  .card_discription::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  .card_discription::-webkit-scrollbar-thumb {
+    background: transparent;
+  }
 
 .card_progress{
     width: 90%;
@@ -59,8 +74,10 @@
     height: 30px;
     /* padding-left: 10px; */
     /* padding-top: 6px; */
-    background-color: rgb(141, 225, 24);
+    background-color: rgb(255, 255, 255);
 }
+
+
 
 
 /* ////End///////////////////////////*/
@@ -81,3 +98,56 @@
 
 
   /* /////////////////////// Ends  */
+
+  /*     /////////////////Operation_Card */
+
+  .operation_card{
+
+    width: 800px;
+    height: 500px;
+    background-color: rgb(212, 208, 215);
+  }
+  .MuiPaper-root {
+
+    width: 800px;
+  }
+
+  .title_input{
+    width: 760px;
+    height: 50px;
+    background-color: transparent;
+    margin-left: 20px;
+    margin-top: 20px;
+    border: 0.1px solid;
+    border-radius: 4px;
+    border-color: rgb(120, 120, 120);
+
+
+  }
+
+  .discription_input{
+    width: 760px;
+    height: 340px;
+    background-color: transparent;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 0.1px solid;
+    border-radius: 4px;
+    border-color: rgb(120, 120, 120);
+  }
+  .buttons_operation{
+    width: 740px;
+  height: 50px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-left: 30px;
+  }
+
+  .discription_input:active{
+    border: 0.5px solid;
+    border-radius: 4px;
+    border-color: rgb(66, 83, 242);
+  }
+ 

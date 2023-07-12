@@ -1,31 +1,23 @@
 import * as React from 'react';
-import { useTheme } from '@mui/material/styles';
-import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import IconButton from '@mui/material/IconButton';
+import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography';
-import SkipPreviousIcon from '@mui/icons-material/SkipPrevious';
-import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-import SkipNextIcon from '@mui/icons-material/SkipNext';
-import styled from '@emotion/styled';
-import { Button } from '@mui/material';
-import HowToRegRoundedIcon from '@mui/icons-material'
 import  "./All.css"
-import PropTypes from 'prop-types';
 import LinearProgress from '@mui/material/LinearProgress';
 // import Card from "./Card"
 // import Box from '@mui/material/Box';
 import axios from "axios";
 import { useState, useEffect } from "react";
+import OperationOnCrad from './operationOnCrad';
+import { useRef } from 'react';
 
 
 export default function CarD() {
-  
-    //  console.log(props)
+
     const progressValue=80;
     const [dataFetch, setData]  = useState();
+    const refOperation = useRef();
+
+const[isOpen , setOpen]= useState(false);
 
 useEffect(()=>{
   const dataFetch=async()=>{
@@ -34,22 +26,17 @@ useEffect(()=>{
       setData(data);
       
     } catch (error) {
-      console.log("error in fetchig task data")
-      
+    console.log("error in fetchig task data")    
     }
   }
   dataFetch();
 
 },[])
-// console.log(dataFetch);
+
 
     
  
     const [progress, setProgress] = useState(60);
-
-
-
-
     useEffect(() => {
       const timer = setInterval(() => {
         console.log(progress)
@@ -61,15 +48,29 @@ useEffect(()=>{
       };
     }, []);
 
+    const handle=()=>{
+       setOpen(true);
+       setTimeout(() => {
+        refOperation.current.log();
+      }, 0);
+    }
+
 
   return (
 
 <>   
 
-
-    <div className='card_11'> 
+{/* <operationOnCrad/> */}
+    <button className='card_11'  onClick={handle}> 
     <div className='card_title'> <Typography>Title</Typography></div>
-    <div className='card_discription'> <Typography>Discription</Typography></div>
+    <div className='card_discription'  
+             
+    
+    > <Typography  >Discription Discription Dis Dion Discri D Discriptn Dison Discription Discription Discription 
+    Discription Discription Discription Discription Discription Discription 
+    Discription Discription Discription Discription Discription 
+    
+    </Typography></div>
     <div className='card_progress'> 
     <Box sx={{ display: 'flex', alignItems: 'center' }}>
       <Box sx={{ width: '100%', mr: 1 }}>
@@ -86,9 +87,9 @@ useEffect(()=>{
 
 
     
-    </div>
-   
-
+    </button>
+   {isOpen && <OperationOnCrad ref={refOperation}/>}   
+  
 </>
   );
 }

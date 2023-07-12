@@ -80,7 +80,18 @@ console.log(realDate)
 
     return (
         <div>
-            <Dialog open={open} onClose={handleClose}>
+            <Dialog    
+            
+            sx={{
+      "& .MuiDialog-container": {
+        "& .MuiPaper-root": {
+          width: "100%",
+          maxWidth: "500px",  // Set your width here
+        },
+      },
+    }
+    }
+             open={open} onClose={handleClose}>
                 <div className="newDialog">
                     <DialogTitle>
                         <TextField
